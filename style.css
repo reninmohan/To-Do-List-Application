@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+
+.container{
+width: 100%;
+min-height: 100vh;
+background: linear-gradient(135deg, #fa709a,#fee140 );
+padding: 10px;
+}
+
+.todo{
+  max-width: 540px;
+  margin: 5em auto 1em;
+  background-color: #fff;
+  padding: 2.5em 2em 1em;
+  border-radius: 20px;
+}
+
+h1{
+  color:#002765;
+  font-size: 2.5em;
+}
+
+.header{
+  display: flex;
+  align-items:center;
+  gap:15px;
+}
+
+.logo{
+  max-width: 30px;
+}
+
+.logo img{
+  max-width: 100%;
+}
+
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-left: 1em;
+  background-color: #edeef0;
+  border-radius: 20px;
+  
+}
+
+.inputTxt{
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-left: 1em;
+  font-size: 1.2rem;
+}
+
+.AddBtn{
+  border: none;
+  outline:none;
+  background-color: #ff5945;
+  color: #fff;
+  padding: 0.625em 1.875em;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.list-container{
+  margin-top: 2em;
+  margin-left: 3em;
+  list-style: none;
+
+}
+
+.list-container li{
+  padding: 10px 0 10px 5px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  text-decoration: none;
+}
+
+.list-container li::before{
+  content: '';
+  position: absolute;
+  width:28px;
+  height: 28px;
+  border-radius: 50%;
+  background-image: url(./assets/radio-off.png);
+  background-size: cover;
+  background-position: center;
+  top:8px;
+  left:-35px;
+}
+
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+  position: relative;
+}
+
+
+ul li.checked::before{
+
+  background-image: url(./assets/radio-on.png);
+  
+}
+
+li{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+
+
+li span {
+  width:18px;
+  
+}
+
+li span img {
+  width:100%;
+}
+
+@media(max-width:500px){
+  .row{
+    margin-left: 0;
+  }
+  .inputTxt{
+   width:60%
+  }
+}
+
