@@ -2,6 +2,8 @@
 
 This is a simple To-do List application built using HTML, CSS, and JavaScript. It allows users to add, remove, and mark tasks as completed.
 
+Site is live at https://reninmohan.github.io/To-Do-List-Application/
+
 ## Screenshots
 
 ![Screenshot 1](To-Do_List_Application.png)
