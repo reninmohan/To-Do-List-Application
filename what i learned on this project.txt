@@ -1,0 +1,4 @@
+1. Used li for adding new todo.
+2.linear gradient for background
+3.Using background: transparent
+4.
